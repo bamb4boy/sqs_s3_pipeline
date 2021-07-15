@@ -1,0 +1,11 @@
+
+# Creates a docker image
+
+docker build -t producersrv:v1 .
+
+# Runs the docker image while mounting the aws folder thus providing the docker with the aws creds
+# Runs the docker image using host network
+# Runs the docker in detached mode
+
+docker run -d -v ~/.aws:/root/.aws  --network host --name producer producersrv:v1
+

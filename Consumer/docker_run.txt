@@ -1,0 +1,12 @@
+
+# Creates a docker image
+
+docker build -t consumersrv:v1 .
+
+# Runs the docker image while mounting the aws folder thus providing the docker with the aws creds
+# Runs the docker image using host network
+
+docker run -v ~/.aws:/root/.aws  --network host --name consumer consumersrv:v1
+
+
+
