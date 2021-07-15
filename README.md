@@ -1,6 +1,7 @@
 #This is a repo for a simple Producer>SQS>Consumer>s3 pipeline
 
 #Components:
+
 1 - Producer - Dockerized flask app that listening to POST requests 
 
 2 - SQS - AWS Simple queue service
