@@ -2,9 +2,13 @@
 
 #Components:
 1 - Producer - Dockerized flask app that listening to POST requests 
+
 2 - SQS - AWS Simple queue service
+
 3 - Consumer - Dockerized python app that checks a SQS for messages
+
 4 - S3 bucket that stores a csv file sent from the Consumer 
+
 
 
 
